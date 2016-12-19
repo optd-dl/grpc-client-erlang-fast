@@ -60,7 +60,7 @@ message HelloReply {
 -define(PROTO_FILE_SERVICE_FUNCTION_PARAMETERS, [{name,"world"}]).
 
 howto_single_conn() ->
-    rop_grpc_client:send_request(?GRPC_SERVER_IP, ?GRPC_SERVER_PORT, [
+	grpc_client:send_request(?GRPC_SERVER_IP, ?GRPC_SERVER_PORT, [
 									{module, ?PROTO_FILE_NAME},
 									{service,?PROTO_FILE_SERVICE_NAME},
 									{function, ?PROTO_FILE_SERVICE_FUNCTION},
