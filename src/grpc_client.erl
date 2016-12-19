@@ -6,7 +6,7 @@
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
+-export([howto_single_conn/0, howto_long_conn/0]).
 -compile(export_all).
 -include("../include/gpb.hrl").
 

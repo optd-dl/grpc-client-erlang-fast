@@ -60,11 +60,11 @@ message HelloReply {
 -define(PROTO_FILE_SERVICE_FUNCTION_PARAMETERS, [{name,"world"}]).
 
 howto_single_conn() ->
-	grpc_client:send_request(?GRPC_SERVER_IP, ?GRPC_SERVER_PORT, [
-									{module, ?PROTO_FILE_NAME},
-									{service,?PROTO_FILE_SERVICE_NAME},
-									{function, ?PROTO_FILE_SERVICE_FUNCTION},
-									{param, ?PROTO_FILE_SERVICE_FUNCTION_PARAMETERS}]).
+	send_request(?GRPC_SERVER_IP, ?GRPC_SERVER_PORT, [
+							{module, ?PROTO_FILE_NAME},
+							{service,?PROTO_FILE_SERVICE_NAME},
+							{function, ?PROTO_FILE_SERVICE_FUNCTION},
+							{param, ?PROTO_FILE_SERVICE_FUNCTION_PARAMETERS}]).
 
 %% After how many times reconnect the gRPC connection
 -define(RECONNECT_TIMES, 1000).
