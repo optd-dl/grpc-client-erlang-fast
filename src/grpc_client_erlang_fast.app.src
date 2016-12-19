@@ -1,0 +1,1 @@
+{application, grpc_client_erlang_fast, [{vsn, "1"}]}.
