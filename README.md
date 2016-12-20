@@ -10,9 +10,10 @@
 * [gRPC](http://www.grpc.io/ "gRPC")
 * [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview "Protocol Buffers")
 
-###Dependence source code:
+###Dependencies:
 * [Fast erlang http/2 client](https://github.com/optd-dl/http2-client-erlang-fast "Fast erlang http/2 client")
 * [Protocol Buffers for erlang](https://github.com/tomas-abrahamsson/gpb "Protocol Buffers for erlang")
+* [Poolboy](https://github.com/devinus/poolboy "Poolboy - A hunky Erlang worker pool factory")
 
 ###Author:
 * **RongCapital(DaLian) information service Ltd.**
